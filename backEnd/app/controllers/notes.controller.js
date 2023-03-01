@@ -135,6 +135,7 @@ exports.delete = (req, res) => {
 
 // Delete all Notes from the database.
 exports.deleteAll = (req, res) => {
+  console.log("in the user ID")
   const id = req.params.userId;
   Note.destroy({
     where: {userId: id},

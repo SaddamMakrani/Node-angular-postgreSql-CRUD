@@ -22,7 +22,7 @@ module.exports = app => {
     router.delete("/:id", notes.delete);
   
     // Create a new Note
-    router.delete("/:userId", notes.deleteAll);
+    router.delete("/all/:userId", notes.deleteAll);
   
     app.use('/api/notes', router);
   };
